@@ -558,11 +558,13 @@
             padding: 20px 10px 50px 10px; 
             text-align: center;
             text-align: justify;
-
+            font-size: 18px;
         }
 
         main .txt-topo-site h1{
-            padding-bottom: 30px;
+            padding: 20px 8%;
+            padding-top: 70px;
+            font-size: 22px;
         }
 
         main .img-topo img{
@@ -645,5 +647,15 @@
 
         .controle-mobile{
         display: block;
+    }
+
+    .txt-about p{
+        font-size: 18px;
+        padding: 20px 10px 50px 10px;
+        text-align: justify;
+    }
+
+    main .txt-titulo .titulo{
+        font-size: 29px;
     }
     }
