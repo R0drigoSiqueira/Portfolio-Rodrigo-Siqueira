@@ -1,0 +1,649 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Stack Sans Headline", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 432;
+        font-style: normal;
+    }
+
+    p{ 
+            text-align: center;
+            text-align: justify;
+    }
+
+    body{
+        background-color: black;
+        height: 100vh;
+    }
+
+    .interface{ 
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .flex{
+        display: flex;
+    }
+
+    /*HEADER*/
+
+    header{
+        padding: 40px 4%;
+    }
+
+    header a{
+        color:#5c5c5c;
+        text-decoration: none;
+        transition: 0.8s ease;
+        
+    }
+
+    header > .interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header nav ul{
+        list-style-type: none;
+    }
+
+    header nav.menu-desktop ul li{
+        display: inline-block;
+        padding: 0 40px;
+        text-decoration: underline;        
+        text-decoration-color: #002e74;
+        text-decoration-thickness: 1px; 
+        text-underline-offset: 5px
+    }
+
+    header .logo img{
+        height: 130px;
+        width: auto;  
+        transition: 0.8s ease;
+    }   
+
+    .btn-contact button{
+        color:rgb(0, 64, 201);
+        background-color:rgb(255, 255, 255);
+        padding: 10px 40px;
+        border-radius: 30px;
+        border: 0;
+        font-size: 18px;
+        font-weight: 700;
+        transition: 0.8s ease;
+        margin-left: 20px;
+    }
+
+    .btn-contact button:hover{
+        background-color:#003e9b;
+        color:white;
+        font-size: 21px;
+        cursor: pointer;
+    }
+
+    /*MENU DESKTOP*/
+
+    .btn-list{
+        padding: 20px 5%;
+    }
+
+    .btn-list i{
+        color:#0066ff;
+        font-size: 40px;
+    }
+
+    .controle-mobile{
+        display: none;
+    }
+
+    .menu-mobile{
+        background-color: rgba(0, 0, 0, 0.959);
+        height: 100vh;
+        position: fixed;
+        top:0;
+        right: 0;
+        z-index: 99999;
+        width: 0%;
+        overflow: hidden;
+        transition: .6s;
+    }
+
+    .menu-mobile.menu-open{
+         width: 70%
+    }
+
+    .menu-mobile nav ul li a,
+    .menu-mobile nav ul li .btn-certificado{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 4%;
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    transition: 1s ease;
+}
+
+.menu-mobile nav ul li button{
+    font-size: 20px;
+}
+
+.menu-mobile nav ul li button:hover{
+    background-color: #003e9b;
+    font-size: 22px;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #003e9b;
+    font-size: 22px;
+}
+
+.menu-mobile .btn-close{
+    padding: 30px 6%;
+}
+.menu-mobile .btn-close i{
+    color: #0066ff;
+    font-size: 30px;
+}
+
+
+    /*MODAL*/
+    .btn{
+        color: #5c5c5c;
+        display: inline-block;
+        text-decoration: underline;        
+        text-decoration-color: #002e74;
+        text-decoration-thickness: 1px; 
+        text-underline-offset: 5px;
+        transition: 0.8s ease;
+    }
+
+    /* Modal background */
+            .modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.6);
+                display: none;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+            }
+
+            .modal-box{
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                border-radius: 10px;
+                color: white;
+                padding: 10px 8%;
+                display: flex;
+                min-height: 100px;      
+                gap: 20px;             
+                flex-wrap: wrap;      
+                justify-content: center;
+                margin-top: 20px;
+                align-items: center;
+            }
+
+            .modal-box-container {
+                display: flex;
+                flex-wrap: wrap;  
+                gap: 20px;
+                justify-content: center; 
+                align-items: center;
+                margin-top: 20px;
+                overflow-y: auto; 
+                max-height: 70vh; 
+        }
+
+        .modal .modal-content .modal-box-container .modal-box span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+            .btn-modalbox{
+                padding: 10px 20px 10px 20px;
+                border-radius: 30px;
+            }
+
+            .modal-content {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                max-width: 500px;
+                width: 90%;
+                text-align: center;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                font-size: 25px;
+                cursor: pointer;
+            }
+
+
+    header a:hover{
+        font-size: 19px;
+        color:white;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: #054bb4;
+        text-decoration-thickness: 2px; 
+        text-underline-offset: 5px
+    }
+
+    header .logo img:hover{
+        height: 140px;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        font-size: 19px;
+        color:white;
+        cursor: pointer;
+        text-decoration: underline;
+        text-decoration-color: #054bb4;
+        text-decoration-thickness: 2px; 
+        text-underline-offset: 5px
+    }
+
+    /*MAIN*/
+
+    main .titulo {
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    main .img-topo img{
+        height: 430px;
+        width: auto;
+        padding: 100px 100px 0px 20px;
+        animation-name: flutuar;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out; 
+        animation-iteration-count: infinite;   
+        animation-direction: alternate; 
+
+        filter: drop-shadow(0 0 4px rgba(0, 62, 155, 0.4))
+            drop-shadow(0 0 8px rgba(0, 79, 197, 0.6))
+            drop-shadow(0 0 12px rgba(90, 154, 250, 0.6));
+        transition: filter 0.3s ease;
+    }
+
+    main .txt-topo-site h1{
+        padding: 150px 0px 0px 20px;
+        color: white;
+        text-decoration: underline;        
+        text-decoration-color: #054bb4;
+        text-decoration-thickness: 2px; 
+        text-underline-offset: 10px;
+        font-weight: 600;
+    }
+
+    main .txt-topo-site p{
+        color: white;
+        padding: 20px 200px 50px 20px;
+        font-weight: 500;
+        text-align: justify;
+    }
+
+    /*HABILIDADES*/
+
+    section.habilidades{
+        padding: 40px 4%;
+    }
+
+    main .txt-titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 180px 0px 70px 0px;
+        color: white;
+        text-decoration: underline;        
+        text-decoration-color: #054bb4;
+        text-decoration-thickness: 2px; 
+        text-underline-offset: 10px;
+        font-weight: 600;
+    }
+
+    section.habilidades .flex{
+        flex-wrap: wrap;
+        flex-direction: row;   
+        gap: 30px;
+    }
+
+    .habilidades .habilidades-box{
+        flex: 0 1 calc(33.333% - 20px);
+        margin-top: 20px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        color:white;
+        padding: 40px;
+        transition: 0.5s ease;
+    }
+
+    .habilidades .habilidades-box i{
+        font-size: 48px;
+        color: #003e9b;
+    }
+    .habilidades .habilidades-box h3{
+        font-size: 28px;
+        margin: 15px 0;
+    }
+
+    .habilidades .habilidades-box:hover{
+        transform: scale(1.05);
+        box-shadow: 0 0 8px rgba(255, 255, 255, 0.404);
+    }
+    @keyframes flutuar {
+        100%{
+            transform: translateY(20px);
+        }
+
+        0%{
+            transform: translateY(0);
+        }
+    }
+
+    /*SOBRE MIM*/
+
+    .txt-about{
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 15px 0px 0px 0px;
+    }
+
+    .img-about img{
+        height: 380px;
+        width: auto;
+        padding: 0px 100px 0px 20px;
+        animation-name: flutuar;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out; 
+        animation-iteration-count: infinite;   
+        animation-direction: alternate; 
+
+        filter: drop-shadow(0 0 4px rgba(0, 62, 155, 0.4))
+            drop-shadow(0 0 8px rgba(0, 79, 197, 0.6))
+            drop-shadow(0 0 12px rgba(90, 154, 250, 0.6));
+    transition: filter 0.3s ease;
+    }
+
+    .txt-rodrigo{
+        padding: 0px 0px 25px 0px;
+    }
+
+    .about .interface{
+        display: flex;
+    }
+
+    /*PROJETOS*/
+
+    section.project {
+        padding: 80px 4%;
+    }
+
+    section.project .txt-titulo {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    section.project .interface .flex {
+        display: flex;
+        flex-wrap: wrap;           
+        justify-content: center;
+        gap: 20px;                
+    }
+
+    .img-port {
+        width: 250px;  
+        height: 360px;            
+        background-color: #054bb4;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        background-size: cover;
+        background-position: 100% 0%;
+        transition: 8s ease;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .img-port:hover{
+        background-position: 100% 100%;
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        background-color: #054bb4a2;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        color: white;
+        opacity: 0;
+        transition: 0.8s ease;
+    }
+
+    .overlay:hover{
+        opacity: 100%;
+    }
+
+    /*FORMULARIO*/
+
+    section.formulario .interface .flex{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        align-items: center;
+
+    }
+
+    section.formulario .interface .flex .formulario-box input{
+        display: block;
+        width: 500px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color:#5c5c5c;
+        border-radius: 8px;
+        color:rgb(255, 255, 255);
+    }
+
+    section.formulario .interface .flex .btn-formulario a button{
+        display: flex;
+        color:rgb(0, 64, 201);
+        background-color:rgb(255, 255, 255);
+        padding: 10px 40px;
+        border-radius: 30px;
+        border: 0;
+        font-size: 18px;
+        font-weight: 700;
+        transition: 0.8s ease;
+    }
+
+    section.formulario .interface .flex .btn-formulario a button:hover{
+        background-color:#003e9b;
+        color:white;
+        font-size: 21px;
+        cursor: pointer;
+    }
+
+
+    section.formulario .interface .flex .formulario-box .text-formulario {
+        width: 500px;
+        padding: 10px 10px 80px 10px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: pre-wrap;
+
+    }
+
+    section.formulario .interface .flex .form{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        align-items: center;
+    }
+
+    #response-message {
+        color: white !important;
+        margin-top: 10px;
+        font-weight: bold;
+        margin-bottom: 70px;
+    }
+
+    /*RESPONSIVIDADE*/
+
+    /*1215px*/
+
+    @media screen and (max-width:1215px) {
+
+        p{
+            padding: 30px;  
+            text-align: center;
+            text-align: justify;
+            font-size: 20px;
+
+    }
+
+        .menu-desktop, .btn-contact{
+            display: none;
+        }
+
+        .flex{
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 8%;
+        }
+
+        .topo_site .flex{
+            flex-direction: column-reverse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        
+        main .txt-topo-site p {
+            padding: 20px 10px 50px 10px; 
+            text-align: center;
+            text-align: justify;
+
+        }
+
+        main .txt-topo-site h1{
+            padding-bottom: 30px;
+        }
+
+        main .img-topo img{
+        height: 300px;
+        width: auto;
+        padding: 0;
+        }
+
+
+        .img-about img{
+        height: 300px;
+        width: auto;
+        padding: 0px;
+
+    }
+
+        main .about .txt-about h1{
+            padding-top: 40px;
+            padding-bottom: 0;
+        }
+
+        .habilidades .habilidades-box {  
+        flex: 0 1 calc(33.333% - 0px);
+        margin-top: 20px;
+        padding: 40px;
+    }
+
+    .habilidades .habilidades-box h3 {
+        font-size: 22px;       
+        margin: 10px 0;
+    }
+
+    .habilidades .habilidades-box p {
+        font-size: 16px;
+        max-width: 90%;
+        padding: 0 5px;
+    }
+        main .txt-titulo{
+        padding: 20px 8%;
+        font-size: 20px;
+    }
+
+    section.project .interface .flex {
+        display: flex;
+        flex-wrap: wrap;           
+        justify-content: center;
+        gap: 30px;                
+    }
+
+    section.formulario .interface .flex {
+        align-items: center;  
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+      section.formulario .interface .flex {
+        padding: 0 15px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    section.formulario .interface .flex .formulario-box input {
+        width: 350px;
+        max-width: 330px;   
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .modal .modal-content .modal-box-container .modal-box span{
+            font-size: 14px;
+        }
+        
+    .modal .modal-content .modal-box-container .modal-box {
+            font-size: 14px;
+        }
+
+    .modal .modal-content .modal-box-container .modal-box p {
+            font-size: 14px;
+        }
+
+        .controle-mobile{
+        display: block;
+    }
+    }
