@@ -211,6 +211,7 @@
                     <form id="form-contact" class="form">
                          <div class="formulario-box">
                     <input name="nome" type="text" placeholder="Digite o seu nome:">
+                    <input name="empresa" type="text" placeholder="Digite a empresa:">
                     <input name="email" type="email" placeholder="Seu e-mail:">
                     <input class="text-formulario" name="message" placeholder="Sua mensagem">
                 </div>
@@ -290,7 +291,8 @@
     emailjs.send('service_lc3uzxa','template_a2e4uas',{
         nome: form.nome.value,
         message: form.message.value,
-        email: form.email.value
+        email: form.email.value,
+        empresa:form.empresa.value
     })
     .then(function(response){
         const responseDiv = document.getElementById('response-message')
